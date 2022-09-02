@@ -1,4 +1,7 @@
 # RestaurantOrderAnalysis
+![interior-shot-cafe-with-chairs-near-bar-with-wooden-tables](https://user-images.githubusercontent.com/107180803/188124298-8c5f2ace-321e-4224-a117-d49fe2f8a1b0.jpg)
+
+
 I performed an Exploratory Data Analysis on a restaurant Order Dataset using SQL. The dataset was downloaded from Kaggle in .xlsx file format, it was then coverted into a .csv file and imported into Microsoft SQL Server Managemet Studio.
 This dataset has details of orders placed by customers to the restaurants in a food delivery app. There are 500 orders that were placed on a day. 
 
