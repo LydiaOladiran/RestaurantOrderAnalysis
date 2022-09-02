@@ -2,7 +2,7 @@
 I performed an Exploratory Data Analysis on a restaurant Order Dataset using SQL. The dataset was downloaded from Kaggle in .xlsx file format, it was then coverted into a .csv file and imported into Microsoft SQL Server Managemet Studio.
 This dataset has details of orders placed by customers to the restaurants in a food delivery app. There are 500 orders that were placed on a day. 
 
-## In this analysis i answered the following questions
+## In this analysis I answered the following questions
 
 1) What is the average customer rating 
 2) What is the total number of items sold?
@@ -18,25 +18,31 @@ This dataset has details of orders placed by customers to the restaurants in a f
 
 # Creating Database
 
-From within Microsoft SQL Server Managemet Studio, i created a new database with the name "RestaurantOrderAnalysis"
+From within Microsoft SQL Server Managemet Studio, I created a new database with the name "RestaurantOrderAnalysis"
+
+
 ![Database](https://user-images.githubusercontent.com/107180803/188012164-f70f6d52-9fb3-40f0-ac5d-82a992fb9ff2.jpg)
 
 # Importing the Dataset
 
-There are two files, one that contains the Orders Data and another that contained the Restaurant Details. I imported each .csv file into the database
+There are two files, one that contained the Orders Data and another that contained the Restaurant Details. I imported each .csv file into the database
+
+
 ![Import](https://user-images.githubusercontent.com/107180803/188013094-c80a4a66-31fb-443f-8416-bf036e8ddc4e.jpg)
 
 # Data Validation
 
-Using the 'WHERE' clause, i checked for Null values in each of the columns for both tables
+Using the 'WHERE' clause, I checked for Null values in each of the columns for both tables
+
 
 ![Null ](https://user-images.githubusercontent.com/107180803/188016047-62f70e80-957b-46b9-bf35-1a0c17a599cc.jpg)
 
 Fortunately, there are no NULL values in the data.
 
-# Data Cleaning
+# Data Cleaning and Transformation
 
- The data is clean already, but i needed to effect a change to the 'Date' column of the Orders Data. The date format was Date/Time, so i splited the column into two to extract the time column in order to effectively answer one of the questions i had in mind
+ The data is clean already, but I needed to effect a change to the 'Date' column of the Orders Data. The date format was Date/Time, so I splited the column into two to extract the time column in order to effectively answer one of the questions I had in mind
+ 
  
  ![Date](https://user-images.githubusercontent.com/107180803/188017824-17e9d70c-5c3f-417d-becf-9929dc57d799.jpg)
  
@@ -63,12 +69,15 @@ As earlier mentioned, we have two tables (Orders Data and Restaurant Details), I
 
 To answer the remaining questions on my list, I created a Common Table Expression (CTE).
 
-CTE is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.
+### CTE is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.
 
 #  What is the number of customer per zone?
 
 ![Q5](https://user-images.githubusercontent.com/107180803/188020675-bab6d260-bb1b-4ef5-bfaf-351d472864ab.jpg)
+
+
 Zone B and Zone D has the same number of customers but the four zones all have the number of customers in the same range
+
 
 # Which restaurant received the most orders?
 
@@ -107,6 +116,11 @@ The Veer Restaurant had the highest order
  ![Q11](https://user-images.githubusercontent.com/107180803/188023923-428919c2-a428-4df6-a5bc-b71dfd50b1ec.jpg)
  
  Zone D has the highest number of orders
+ 
+ 
+ 
+ 
+ 
  
  
 
